@@ -1,13 +1,10 @@
-import Footer from "../components/Footer";
-import Hello from "../components/Hello";
-import Navbar from "../components/Navbar";
+import Hero from "../components/Hero/Hero";
+import Navbar from "../components/Navbar/Navbar";
 
 function Main() {
   return (
     <main>
-      <h1>Final Project - Covid ID</h1>
-      <h2>Good Luck, Bestie</h2>
-      <Hello />
+      <Hero />
     </main>
   );
 }
@@ -17,7 +14,6 @@ function Home() {
     <>
       <Navbar />
       <Main />
-      <Footer />
     </>
   );
 }
