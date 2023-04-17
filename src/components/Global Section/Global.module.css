@@ -1,0 +1,64 @@
+
+  .container{
+    max-width: 1536px;
+    margin: auto;
+    padding: 0px 16px;
+  }
+
+  .info{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .title h1{
+    font-weight: 800;
+    color: #00b4d8;
+    background-image: -webkit-linear-gradient(30deg, #00b4d8 0%,#0077b6 78%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+  }
+
+@media (min-width: 768px){
+
+  .container{
+    display: flex;
+    align-items: center;
+    height: 180px;
+    /* border: 3px solid var(--pacific-cyan);  */
+    border-radius: 20px;
+  }
+
+  .info{
+    background-color: transparent;
+  }
+
+  .info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-basis: 50%;
+  }
+
+  .title{
+    background-color: transparent;
+    flex-basis: 50%;
+    text-align: start;
+  }
+
+  .title p, b{
+    margin-top: 0.5rem;
+    background-color: transparent;
+  }
+
+
+}
+
+
+@media (min-width: 992px) {
+    /* 
+     * Nothing TODO HERE.
+     * We haven't styling Navbar.
+     */
+  }

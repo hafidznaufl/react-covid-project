@@ -1,4 +1,4 @@
-const data = {
+export const data = {
   last_update: "2022-03-31",
   indonesia: [
     {
@@ -18,5 +18,3 @@ const data = {
     },
   ],
 };
-
-export default data;

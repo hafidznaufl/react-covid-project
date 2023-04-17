@@ -1,14 +1,3 @@
-:root {
-    /* CSS HEX */
-    --federal-blue: #03045eff;
-    --honolulu-blue: #0077b6ff;
-    --pacific-cyan: #00b4d8ff;
-    --non-photo-blue: #90e0efff;
-    --light-cyan: #caf0f8ff;
-
-    --grey: #c9c9c9;
-  }
-
 
 .container{
     display: flex;
@@ -17,7 +6,7 @@
     justify-content: space-between;
     text-align: left;
     padding: 16px;
-    color: #252525;
+    color: var(--black);
     max-width: 1536px;
     margin: auto;
 }
@@ -30,8 +19,8 @@
 .title__diff{
     font-weight: 800;
     font-size: 50px;
-    color: #00b4d8;
-    background-image: -webkit-linear-gradient(0deg, #00b4d8 0%,#0077b6 78%);
+    color: var(--pacific-cyan);
+    background-image: -webkit-linear-gradient(60deg, #00b4d8 0%,#0077b6 78%);
     background-clip: text;
     -webkit-background-clip: text;
     -text-fill-color: transparent;
@@ -41,13 +30,14 @@
 .content{
     display: flex;
     flex-direction: column;
+    /* align-items: center; */
     margin-top: 10vh;
-    height: 400px;
+    height: 730px;
 }
 
 .content__button{
-    border: 2px solid #252525;
-    padding: 15px 15px;
+    border: 2px solid var(--black);
+    padding: 15px 24px;
     width: 100%;
     font-weight: 500;
     display: flex;
@@ -72,10 +62,6 @@
     margin-top: 1rem;
 }
 
-.hero__right{
-    display: flex;
-}
-
 .pattern{
     margin-top: 1rem;
     height: 40vh;
@@ -89,8 +75,9 @@
     .content{
         flex-direction: row;
         width: 100%;
-        align-items: center;
         justify-content: space-between;
+        height: 70px;
+        margin-bottom: 410px;
     }
 
     .content__button{
@@ -104,6 +91,7 @@
 
     .content__button:active{
         transform: translateY(8px);
+        box-shadow: none;
     }
 
     .content p{
@@ -112,6 +100,7 @@
 
     .hero__left{
         flex-basis: 60%;
+        margin-top: 1.5rem;
     }
 
     .hero__right{
@@ -120,7 +109,7 @@
     }
 
     .pattern{
-        border-radius: 1    0px;
+        border-radius: 20px;
         margin-top: 0;
         height: 400px;
     }

@@ -1,5 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;800;900&family=Poppins:wght@200;300;400&display=swap");
 
+:root {
+  /* CSS HEX */
+  --federal-blue: #03045eff;
+  --honolulu-blue: #0077b6ff;
+  --pacific-cyan: #00b4d8ff;
+  --non-photo-blue: #90e0efff;
+  --light-cyan: #caf0f8ff;
+  --black: #343434;
+  --white: #f6f8fd;
+  --pure-white: #ffffff;
+  --grey: #c9c9c9;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -7,4 +20,17 @@
   font-family: Inter;
   background-color: #f6f8fd;
   user-select: none;
+}
+
+@media (min-width: 764px) {
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  body::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+  body {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
 }

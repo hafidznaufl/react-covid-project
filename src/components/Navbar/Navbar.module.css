@@ -1,17 +1,8 @@
-:root {
-  /* CSS HEX */
-  --federal-blue: #03045eff;
-  --honolulu-blue: #0077b6ff;
-  --pacific-cyan: #00b4d8ff;
-  --non-photo-blue: #90e0efff;
-  --light-cyan: #caf0f8ff;
-  --grey: #c9c9c9;
-}
 
 /* Small Screen */
 .container {
   padding: 1rem;
-  color: #252525;
+  color: var(--black);
   overflow: hidden;
 }
 
