@@ -1,9 +1,7 @@
 import style from "./Table.module.css";
-import { data } from "../../utils/constants/provinces";
-import { useState } from "react";
 
-const Table = () => {
-  const [obj, setObj] = useState(data.provinces);
+const Table = (props) => {
+  const {provinces, setProvinces} = props;
 
   return (
     <div className={style.container}>
@@ -20,21 +18,21 @@ const Table = () => {
               <tr>
                 <th>No.</th>
                 <th>Provinsi</th>
-                <th>Positif</th>
+                <th>Kasus</th>
                 <th>Sembuh</th>
                 <th>Meninggal</th>
                 <th>Dirawat</th>
               </tr>
             </thead>
             <tbody>
-              {obj.map((item, index) => (
+              {provinces.map((province, index) => (
                 <tr key={index}>
                   <td>{index + 1}</td>
-                  <td>{item.kota}</td>
-                  <td>{item.kasus}</td>
-                  <td>{item.sembuh}</td>
-                  <td>{item.meninggal}</td>
-                  <td>{item.dirawat}</td>
+                  <td>{province.kota}</td>
+                  <td>{province.kasus}</td>
+                  <td>{province.sembuh}</td>
+                  <td>{province.meninggal}</td>
+                  <td>{province.dirawat}</td>
                 </tr>
               ))}
             </tbody>

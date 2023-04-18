@@ -1,0 +1,39 @@
+.container{
+    padding: 0 16px;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+}
+
+.left{
+    margin: 0 0 20px 0
+}
+
+.right{
+    
+}
+
+@media (min-width: 764px) {
+    .container{
+        max-width: 1536px;
+        margin: auto;
+    }
+
+    .content{
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        height: 600px;
+    }
+
+    .left{
+        flex-basis: 50%;
+        margin: 0;
+    }
+
+    .right{
+        flex-basis: 50%;
+    }
+}

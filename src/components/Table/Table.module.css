@@ -1,8 +1,6 @@
 .container{
-    padding: 32px 16px;
+    padding: 16px 16px;
     border-radius: 20px;
-    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.15), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-    background-color: var(--pure-white);
 }
 
 .content, .title, h1, p{
@@ -21,14 +19,13 @@
 
   .table{
     max-width: 400px;
-    max-height: 400px;
+    max-height: 450px;
     overflow-x: scroll;
   }
 
   .title {
     display: flex;
     flex-direction: column;
-    align-items: center;
     margin-bottom: 32px;
   }
   
@@ -76,9 +73,11 @@
 
   @media (min-width: 764px) {
     .container{
-        max-width: 1600px;
+        max-width: 1536px;
         margin: 0 auto 100px auto;
         padding: 32px 32px;
+        box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.15), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+        background-color: var(--pure-white);
     }
 
     .table{

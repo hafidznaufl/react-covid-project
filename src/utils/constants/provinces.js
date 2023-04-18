@@ -1,4 +1,4 @@
-export const data = {
+export default {
   last_update: "2022-03-29",
   total_province: 34,
   provinces: [
