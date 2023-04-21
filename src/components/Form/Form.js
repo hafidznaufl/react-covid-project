@@ -30,6 +30,12 @@ const Form = (props) => {
       data,
       ...provinces.splice(index + 1),
     ]);
+
+    setKota("");
+    setKasus("");
+    setSembuh("");
+    setMeninggal("");
+    setDirawat("");       
   };
 
   return (

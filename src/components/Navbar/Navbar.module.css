@@ -54,10 +54,23 @@
 
 /* Medium Screen */
 @media (min-width: 768px) {
+
+  .container {
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    width: 100vw;
+  }
+  
   .navbar {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    max-width: 1536px;
+    margin: auto;
   }
 
   .navbar__brand {
@@ -99,9 +112,4 @@
    * Nothing TODO HERE.
    * We haven't styling Navbar.
    */
-
-  .container {
-    max-width: 1536px;
-    margin: auto;
-  }
 }

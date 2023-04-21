@@ -1,7 +1,7 @@
 
   .container{
     max-width: 1536px;
-    margin: auto;
+    margin: 8rem auto;
     padding: 0px 16px;
   }
 
@@ -27,7 +27,7 @@
     align-items: center;
     height: 180px;
     border-radius: 20px;
-    margin: 0px auto 110px auto;
+    margin: auto;
   }
 
   .info{
