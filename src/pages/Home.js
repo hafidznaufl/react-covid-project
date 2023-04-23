@@ -4,6 +4,7 @@ import Global from "../components/Global Section/Global";
 import Hero from "../components/Hero/Hero";
 import Navbar from "../components/Navbar/Navbar";
 import Table from "../components/Table/Table";
+import Footer from "../components/Footer/Footer"
 import data from "../utils/constants/provinces"
 
 function Main() {
@@ -25,6 +26,7 @@ function Home() {
     <>
       <Navbar />
       <Main />
+      <Footer />
     </>
   );
 }

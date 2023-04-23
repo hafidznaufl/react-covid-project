@@ -26,17 +26,25 @@ const Form = (props) => {
     };
 
     setProvinces([
-      ...provinces.splice(0, index),
+      ...provinces.slice(0, index),
       data,
-      ...provinces.splice(index + 1),
+      ...provinces.slice(index + 1),
     ]);
 
     setKota("");
     setKasus("");
     setSembuh("");
     setMeninggal("");
-    setDirawat("");       
+    setDirawat("");
   };
+
+  const handleReset = () => {
+    setKota("");
+    setKasus("");
+    setSembuh("");
+    setMeninggal("");
+    setDirawat("");
+  }
 
   return (
     <div className={style.container}>
@@ -93,7 +101,8 @@ const Form = (props) => {
               onChange={(e) => setDirawat(e.target.value)}
             />
 
-            <button>ADD/UPDATE</button>
+            <button className={style.button__submit}>ADD/UPDATE</button>
+            <button onClick={handleReset} className={style.button__reset}>RESET</button>
           </form>
         </div>
       </div>
