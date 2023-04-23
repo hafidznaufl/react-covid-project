@@ -6,10 +6,10 @@ const Form = (props) => {
   const { provinces, setProvinces } = props;
 
   const [kota, setKota] = useState("");
-  const [kasus, setKasus] = useState("");
-  const [sembuh, setSembuh] = useState("");
-  const [meninggal, setMeninggal] = useState("");
-  const [dirawat, setDirawat] = useState("");
+  const [kasus, setKasus] = useState(0);
+  const [sembuh, setSembuh] = useState(0);
+  const [meninggal, setMeninggal] = useState(0);
+  const [dirawat, setDirawat] = useState(0);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -32,18 +32,18 @@ const Form = (props) => {
     ]);
 
     setKota("");
-    setKasus("");
-    setSembuh("");
-    setMeninggal("");
-    setDirawat("");
+    setKasus(0);
+    setSembuh(0);
+    setMeninggal(0);
+    setDirawat(0);
   };
 
   const handleReset = () => {
     setKota("");
-    setKasus("");
-    setSembuh("");
-    setMeninggal("");
-    setDirawat("");
+    setKasus(0);
+    setSembuh(0);
+    setMeninggal(0);
+    setDirawat(0);
   }
 
   return (
