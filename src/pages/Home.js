@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Form from "../components/Form/Form";
-import Global from "../components/Global Section/Global";
+import Global from "../components/Global/Global";
 import Hero from "../components/Hero/Hero";
 import Navbar from "../components/Navbar/Navbar";
 import Table from "../components/Table/Table";
