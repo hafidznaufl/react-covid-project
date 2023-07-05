@@ -35,13 +35,13 @@
   border-radius: 10px;
 }
 
-.navbar__item {
+a, .navbar__item {
   margin-bottom: 1rem;
   font-weight: 600;
   cursor: pointer;
 }
 
-.navbar__item:hover {
+a:hover {
   color: var(--honolulu-blue);
 }
 
