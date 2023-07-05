@@ -1,8 +1,8 @@
-import style from "./Form.module.css";
 import Pattern from "../../assets/Pattern";
 import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { updateProvinces } from "../../features/provinces/provincesSlice";
+import StyledForm from "./Form.styled";
 
 const Form = () => {
   const provinces = useSelector((state) => state.provinces.provinces);
@@ -55,18 +55,18 @@ const Form = () => {
   };
 
   return (
-    <div className={style.container}>
-      <div className={style.content}>
-        <div className={style.left}>
+    <StyledForm>
+      <div className="content">
+        <div className="left">
           <Pattern />
         </div>
 
-        <div className={style.right}>
-          <div className={style.title}>
+        <div className="right">
+          <div className="title">
             <h1>Form Covid</h1>
           </div>
 
-          <form className={style.form} onSubmit={handleSubmit}>
+          <form className="form" onSubmit={handleSubmit}>
             <label htmlFor="kota">Kota</label>
             <select
               id="kota"
@@ -103,13 +103,13 @@ const Form = () => {
               onChange={(e) => setJumlah(e.target.value)}
             />
 
-            <div className={style.button}>
-              <button className={style.button__submit} type="submit">
+            <div className="button">
+              <button className="button__submit" type="submit">
                 ADD/UPDATE
               </button>
               <button
                 onClick={handleReset}
-                className={style.button__reset}
+                className="button__reset"
                 type="button"
               >
                 RESET
@@ -118,7 +118,7 @@ const Form = () => {
           </form>
         </div>
       </div>
-    </div>
+    </StyledForm>
   );
 };
 

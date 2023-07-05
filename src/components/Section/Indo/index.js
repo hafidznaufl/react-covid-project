@@ -3,12 +3,11 @@ import { useEffect, useState } from "react";
 import ENDPOINTS from "../../../utils/constants/endpoints";
 import ContentSec from "../../Content";
 import Table from "../../Table";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { updateProvinces } from "../../../features/provinces/provincesSlice";
 
 const Indo = () => {
   const [indo, setIndo] = useState([]);
-  const provinces = useSelector((state) => state.provinces.provinces);
   const dispatch = useDispatch();
 
   useEffect(() => {

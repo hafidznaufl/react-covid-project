@@ -1,9 +1,9 @@
-import style from "./Footer.module.css";
+import StyledFooter from "./Footer.styled";
 
 const Footer = () => {
   return (
-    <div className={style.container}>
-      <div className={style.content}>
+    <StyledFooter>
+      <div className="content">
         <p>
           Copyright by{" "}
           <b>
@@ -12,7 +12,7 @@ const Footer = () => {
           </b>
         </p>
       </div>
-    </div>
+    </StyledFooter>
   );
 };
 

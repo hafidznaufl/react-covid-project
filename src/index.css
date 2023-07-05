@@ -22,9 +22,23 @@
   user-select: none;
 }
 
+.pattern {
+  margin-top: 1rem;
+  height: 40vh;
+  border-radius: 10px;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.15),
+    0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
 @media (min-width: 764px) {
   /* Hide scrollbar for Chrome, Safari and Opera */
   body::-webkit-scrollbar {
     display: none;
+  }
+
+  .pattern {
+    border-radius: 20px;
+    margin-top: 0;
+    height: 400px;
   }
 }

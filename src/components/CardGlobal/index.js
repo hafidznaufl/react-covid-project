@@ -1,18 +1,18 @@
-import style from "./CardGlobal.module.css";
+import StyledCardGlobal from "./CardGlobal.styled";
 
 const CardGlobal = ({ item }) => {
   return (
-    <div className={style.box}>
-      <h3 className={style.title}>{item.name}</h3>
-      <div className={style.content}>
+    <StyledCardGlobal>
+      <h3 className="title">{item.name}</h3>
+      <div className="content">
         {Object.keys(item.numbers).map((key) => (
-          <div className={style.value} key={key}>
-            <div className={style.status}>{key}</div>
-            <h2 className={style.total}>{item.numbers[key]}</h2>
+          <div className="value" key={key}>
+            <div className="status">{key}</div>
+            <h2 className="total">{item.numbers[key]}</h2>
           </div>
         ))}
       </div>
-    </div>
+    </StyledCardGlobal>
   );
 };
 

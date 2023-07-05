@@ -1,19 +1,19 @@
 import { useSelector } from "react-redux";
-import style from "./Table.module.css";
+import StyledTable from "./Table.styled";
 
 const Table = ({ title }) => {
   const provinces = useSelector((state) => state.provinces.provinces);
 
   return (
-    <div className={style.container}>
-      <div className={style.content}>
-        <div className={style.title}>
+    <StyledTable>
+      <div className="content">
+        <div className="title">
           <h1>{title}</h1>
           <p>
             <b>Data Covid</b> Berdasarkan Provinsi
           </p>
         </div>
-        <div className={style.table}>
+        <div className="table">
           <table>
             <thead>
               <tr>
@@ -61,7 +61,7 @@ const Table = ({ title }) => {
           </table>
         </div>
       </div>
-    </div>
+    </StyledTable>
   );
 };
 

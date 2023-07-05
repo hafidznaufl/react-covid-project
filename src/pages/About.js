@@ -1,10 +1,13 @@
-import Hero from "../components/Hero";
+import PatternTop from "../assets/PatternTop";
+import AboutSection from "../components/Section/About";
 
 const About = () => {
   return (
     <div>
-      <Hero />
+      <PatternTop />
+      <AboutSection />
     </div>
   );
 };
+
 export default About;

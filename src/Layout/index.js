@@ -1,14 +1,14 @@
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
-import style from "./Layout.module.css";
+import StyledLayout from "./Layout.styled";
 
 const Layout = ({ children }) => {
   return (
-    <div>
+    <StyledLayout>
       <Navbar />
-      <div className={style.layout}>{children}</div>
+      <div className="layout">{children}</div>
       <Footer />
-    </div>
+    </StyledLayout>
   );
 };
 export default Layout;
